@@ -1,0 +1,144 @@
+
+.projects {
+    padding: 2rem;
+    max-width: 1400px;
+    margin: 0 auto 4% auto;
+}
+
+.title_project {
+    text-align: center;
+    font-size: 4em;
+    margin-bottom: 3%;
+}
+
+.projects .card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: nowrap;
+}
+
+
+.card {
+    width: calc(33.33% - 1.33rem);
+    min-width: 300px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    font-family: 'Segoe UI', sans-serif;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+
+.tilt {
+    overflow: hidden;
+}
+
+.img {
+    height: 160px;
+    overflow: hidden;
+}
+
+.img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    transition: transform 0.5s;
+}
+
+.card:hover .img img {
+    transform: scale(1.05);
+}
+
+.info {
+    padding: 20px;
+}
+
+.cat {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #71717A;
+    margin-bottom: 5px;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #18181B;
+    margin: 0 0 10px;
+    letter-spacing: -0.5px;
+}
+
+.desc {
+    font-size: 13px;
+    color: #52525B;
+    line-height: 1.4;
+    margin-bottom: 12px;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: none;
+    font-weight: 400;
+}
+
+.feats {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 15px;
+}
+
+.feat {
+    font-size: 10px;
+    background: #F4F4F5;
+    color: #71717A;
+    padding: 3px 8px;
+    border-radius: 10px;
+    font-weight: 500;
+}
+
+
+@media (max-width: 1024px) {
+    .projects .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .card {
+        width: 100%;
+        max-width: 360px;
+    }
+}
+
+@media (max-width: 400px) {
+    .card {
+        width: 90%;
+    }
+    
+    .title {
+        font-size: 16px;
+    }
+    
+    .img {
+        height: 140px;
+    }
+}
+
+.more-projects {
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.5em;
+    color: #1F261C;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
